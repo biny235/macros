@@ -2,7 +2,7 @@ Sub Silent_save_to_PDF()
     'Macro that saves the file as a PDF in the current directory with same filename
 
     ActiveDocument.ExportAsFixedFormat OutputFileName:= _
-        Replace(ActiveDocument.FullName, ".docx", ".pdf"), 
+        Replace(ActiveDocument.FullName, ".docx", ".pdf"), _
         ExportFormat:=wdExportFormatPDF, OpenAfterExport:=False, OptimizeFor:= _
         wdExportOptimizeForPrint, Range:=wdExportAllDocument, Item:= _
         wdExportDocumentContent, IncludeDocProps:=False, KeepIRM:=True, _
@@ -77,3 +77,5 @@ Sub Save_to_PDF()
     End With
 
 End Sub
+
+
